@@ -16,7 +16,7 @@ import os
 app = Flask(__name__)
 
 # ── CORS: Vercel frontend ka domain allow karo ──────────────────────────
-CORS(app, resources={r"/api/*": {"origins": "*"}})
+CORS(app)
 
 # ── Models load karo ───────────────────────────────────────────────────
 BASE = os.path.dirname(__file__)
